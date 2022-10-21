@@ -1,31 +1,37 @@
 ﻿using dg.kata.toyrobot.Models;
+using dg.kata.toyrobot.Services;
 
 namespace dg.kata.toyrobot.RobotEntities;
 
 public class SouthFacingRobot : RobotPosition
 {
-    public SouthFacingRobot(RobotPosition state) : this(state.X, state.Y, state.Robot)
+    private readonly MovementValidator _movementValidator;
+
+    public SouthFacingRobot(RobotPosition state, MovementValidator movementValidator) : this(state.X, state.Y,
+        state.Robot, movementValidator)
     {
     }
-    
-    public SouthFacingRobot(int x, int y, Robot robot)
+
+    public SouthFacingRobot(int x, int y, Robot robot, MovementValidator movementValidator)
     {
-        this.Direction = Direction.South;
-        this.X = x;
-        this.Y = y;
-        this.Robot = robot;
+        _movementValidator = movementValidator;
+        Direction = Direction.South;
+        X = x;
+        Y = y;
+        Robot = robot;
     }
 
     public override void Turn(TurnDirection turnDirection)
     {
         if (turnDirection == TurnDirection.Left)
-            Robot.State = new EastFacingRobot(this);
+            Robot.State = new EastFacingRobot(this, _movementValidator);
         else
-            Robot.State = new WestFacingRobot(this);
+            Robot.State = new WestFacingRobot(this, _movementValidator);
     }
 
     public override void Move()
     {
-        throw new NotImplementedException();
+        if (_movementValidator.CanMove(X, Y - 1))
+            Y--;
     }
 }

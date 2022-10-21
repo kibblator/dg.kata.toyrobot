@@ -12,8 +12,8 @@ public abstract class RobotPosition
     public abstract void Turn(TurnDirection turnDirection);
     public abstract void Move();
     
-    public string Report()
+    public void Report()
     {
-        throw new NotImplementedException();
+        Console.Write($"{X},{Y},{Direction.ToString().ToUpper()}");
     }
 }

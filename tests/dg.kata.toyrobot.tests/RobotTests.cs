@@ -1,5 +1,6 @@
 ﻿using dg.kata.toyrobot.Models;
 using dg.kata.toyrobot.RobotEntities;
+using dg.kata.toyrobot.Services;
 using Xunit;
 
 namespace dg.kata.toyrobot.tests;
@@ -14,7 +15,7 @@ public class RobotTests
     {
         //Arrange
         const int x = 0, y = 0;
-        var robot = new Robot(x, y, Direction.North);
+        var robot = new Robot(x, y, Direction.North, new MovementValidator(5));
 
         //Act
         robot.Turn(turnDirection);
@@ -31,7 +32,7 @@ public class RobotTests
     {
         //Arrange
         const int x = 0, y = 0;
-        var robot = new Robot(x, y, Direction.East);
+        var robot = new Robot(x, y, Direction.East, new MovementValidator(5));
 
         //Act
         robot.Turn(turnDirection);
@@ -48,7 +49,7 @@ public class RobotTests
     {
         //Arrange
         const int x = 0, y = 0;
-        var robot = new Robot(x, y, Direction.South);
+        var robot = new Robot(x, y, Direction.South, new MovementValidator(5));
 
         //Act
         robot.Turn(turnDirection);
@@ -65,7 +66,7 @@ public class RobotTests
     {
         //Arrange
         const int x = 0, y = 0;
-        var robot = new Robot(x, y, Direction.West);
+        var robot = new Robot(x, y, Direction.West, new MovementValidator(5));
 
         //Act
         robot.Turn(turnDirection);
