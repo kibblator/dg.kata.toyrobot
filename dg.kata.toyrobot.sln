@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dg.kata.toyrobot", "src\dg.kata.toyrobot\dg.kata.toyrobot.csproj", "{3CE87C76-0E70-4DBE-97B8-52A27152B013}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dg.kata.toyrobot.tests", "tests\dg.kata.toyrobot.tests\dg.kata.toyrobot.tests.csproj", "{DFBA023E-FC3B-4EB5-B2E8-E011B737AC81}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3CE87C76-0E70-4DBE-97B8-52A27152B013}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CE87C76-0E70-4DBE-97B8-52A27152B013}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CE87C76-0E70-4DBE-97B8-52A27152B013}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CE87C76-0E70-4DBE-97B8-52A27152B013}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFBA023E-FC3B-4EB5-B2E8-E011B737AC81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFBA023E-FC3B-4EB5-B2E8-E011B737AC81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFBA023E-FC3B-4EB5-B2E8-E011B737AC81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFBA023E-FC3B-4EB5-B2E8-E011B737AC81}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
