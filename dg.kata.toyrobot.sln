@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dg.kata.toyrobot", "src\dg.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dg.kata.toyrobot.tests", "tests\dg.kata.toyrobot.tests\dg.kata.toyrobot.tests.csproj", "{DFBA023E-FC3B-4EB5-B2E8-E011B737AC81}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dg.kata.toyrobot.console", "src\dg.kata.toyrobot.console\dg.kata.toyrobot.console.csproj", "{11A2DCC6-8567-4EB5-BB0E-30658EC1AB7B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{DFBA023E-FC3B-4EB5-B2E8-E011B737AC81}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DFBA023E-FC3B-4EB5-B2E8-E011B737AC81}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DFBA023E-FC3B-4EB5-B2E8-E011B737AC81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11A2DCC6-8567-4EB5-BB0E-30658EC1AB7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11A2DCC6-8567-4EB5-BB0E-30658EC1AB7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11A2DCC6-8567-4EB5-BB0E-30658EC1AB7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11A2DCC6-8567-4EB5-BB0E-30658EC1AB7B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
