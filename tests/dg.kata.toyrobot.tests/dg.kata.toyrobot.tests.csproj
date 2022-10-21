@@ -25,4 +25,19 @@
       <ProjectReference Include="..\..\src\dg.kata.toyrobot\dg.kata.toyrobot.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Remove="Resources\InstructionFiles\HappyPath.txt" />
+      <EmbeddedResource Include="Resources\InstructionFiles\HappyPath.txt">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <None Remove="Resources\InstructionFiles\InvalidInput" />
+      <EmbeddedResource Include="Resources\InstructionFiles\InvalidInput">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <None Remove="Resources\InstructionFiles\SpacesBetweenInstructions.txt" />
+      <EmbeddedResource Include="Resources\InstructionFiles\SpacesBetweenInstructions.txt">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </EmbeddedResource>
+    </ItemGroup>
+
 </Project>

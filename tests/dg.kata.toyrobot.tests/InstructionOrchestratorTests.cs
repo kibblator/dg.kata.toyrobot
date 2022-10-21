@@ -16,10 +16,11 @@ public class InstructionOrchestratorTests
     }
     
     [Fact]
-    public void GivenPlaceInstruction_CorrectMethodsCalled()
+    public void GivenPlaceInstruction_CorrectMethodsCalled_HappyPath()
     {
         // Arrange
-        _instructionParserMock.Setup(ip => ip.GetInstructions()).Returns(new List<Instruction>
+        const string expectedOutput = "0,1,NORTH";
+        _instructionParserMock.Setup(ip => ip.GetInstructionsFromFile(It.IsAny<string>())).Returns(new List<Instruction>
         {
             new()
             {
@@ -46,12 +47,12 @@ public class InstructionOrchestratorTests
             }
         });
         
-        // var orchestrator = new InstructionOrchestrator(_instructionParserMock.Object);
-        //
-        // // Act
-        // orchestrator.RunInstructions();
-        //
-        // //Assert
-        // Assert.That
+        var orchestrator = new InstructionOrchestrator(_instructionParserMock.Object);
+        
+        // Act
+        var output = orchestrator.RunInstructions();
+        
+        //Assert
+        Assert.Equal(expectedOutput, output);
     }
 }

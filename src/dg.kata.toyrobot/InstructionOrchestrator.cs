@@ -7,12 +7,15 @@ public class InstructionOrchestrator
 {
     private readonly List<Instruction> _instructions;
 
-    public InstructionOrchestrator(IGetInstructions instructionParser)
+    public InstructionOrchestrator(IGetInstructions instructionParser, string instructionFilePath = "")
     {
-        _instructions = instructionParser.GetInstructions();
+        _instructions = instructionParser.GetInstructionsFromFile(instructionFilePath).ToList();
     }
 
-    public void RunInstructions()
+    public string RunInstructions()
     {
+        
+        
+        return "";
     }
 }

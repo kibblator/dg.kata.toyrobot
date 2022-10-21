@@ -4,5 +4,5 @@ namespace dg.kata.toyrobot.Interfaces;
 
 public interface IGetInstructions
 {
-    List<Instruction> GetInstructions();
+    IEnumerable<Instruction> GetInstructionsFromFile(string filePath);
 }
