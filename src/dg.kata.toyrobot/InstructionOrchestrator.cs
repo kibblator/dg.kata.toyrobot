@@ -8,7 +8,7 @@ namespace dg.kata.toyrobot;
 public class InstructionOrchestrator
 {
     private readonly List<Instruction> _instructions;
-    private const int gridSize = 5;
+    private const int GridSize = 5;
 
     public InstructionOrchestrator(IGetInstructions instructionParser, string instructionFilePath = "")
     {
@@ -24,7 +24,7 @@ public class InstructionOrchestrator
             {
                 case InstructionName.Place:
                     robot = new Robot(instruction.X, instruction.Y, instruction.Direction,
-                        new MovementValidator(gridSize));
+                        new MovementValidator(GridSize));
                     break;
                 case InstructionName.Move:
                     robot?.Move();

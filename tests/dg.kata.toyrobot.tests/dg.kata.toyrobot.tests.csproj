@@ -38,6 +38,18 @@
       <EmbeddedResource Include="Resources\InstructionFiles\SpacesBetweenInstructions.txt">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </EmbeddedResource>
+      <None Remove="Resources\InstructionFiles\ExampleA.txt" />
+      <EmbeddedResource Include="Resources\InstructionFiles\ExampleA.txt">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <None Remove="Resources\InstructionFiles\ExampleB.txt" />
+      <EmbeddedResource Include="Resources\InstructionFiles\ExampleB.txt">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <None Remove="Resources\InstructionFiles\ExampleC.txt" />
+      <EmbeddedResource Include="Resources\InstructionFiles\ExampleC.txt">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </EmbeddedResource>
     </ItemGroup>
 
 </Project>
